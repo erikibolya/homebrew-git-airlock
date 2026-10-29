@@ -1,26 +1,26 @@
 class GitAirlock < Formula
   desc "Push and merge pull requests across a network air gap"
   homepage "https://github.com/erikibolya/git-airlock"
-  version "1.8.6"
+  version "1.8.7"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/erikibolya/git-airlock/releases/download/v1.8.6/airlock-darwin-arm64.tar.gz"
-      sha256 "54c1fd3742f91467d273705fcf123896caa6f5c2c2bc073858b3087f0dde79f7"
+      url "https://github.com/erikibolya/git-airlock/releases/download/v1.8.7/airlock-darwin-arm64.tar.gz"
+      sha256 "e2a05ef6fb35ab3424102779417f0a62e2ab3d2e2a8eb54f7849bfbe5731d982"
     else
-      url "https://github.com/erikibolya/git-airlock/releases/download/v1.8.6/airlock-darwin-amd64.tar.gz"
-      sha256 "4f25f011ae7bef9a8d69e2e3fbca6b39fa6f45274ee513a337ddc07d016747ed"
+      url "https://github.com/erikibolya/git-airlock/releases/download/v1.8.7/airlock-darwin-amd64.tar.gz"
+      sha256 "9dbdab63bbba79a9c89c0e63460fb3ea213d003247a8e3de2a5202a2ca71c18f"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/erikibolya/git-airlock/releases/download/v1.8.6/airlock-linux-arm64.tar.gz"
-      sha256 "4a1fe8e60298bbbef69a89722b91cc27152c682d642b51a492733e1e7f95bc35"
+      url "https://github.com/erikibolya/git-airlock/releases/download/v1.8.7/airlock-linux-arm64.tar.gz"
+      sha256 "35a09d86933e2ed759d3ef42a28963b84d4be84db8bc9754b68c08b6e873a37f"
     else
-      url "https://github.com/erikibolya/git-airlock/releases/download/v1.8.6/airlock-linux-amd64.tar.gz"
-      sha256 "0bb8becc88e1a7fdfd3520751dc34ce88b69e96cf249ffdbb5a547ca9328a113"
+      url "https://github.com/erikibolya/git-airlock/releases/download/v1.8.7/airlock-linux-amd64.tar.gz"
+      sha256 "4446b0744efc8c022141cf811bb6ee1c27b02423231bb93359b7214ea05c537b"
     end
   end
 
