@@ -1,0 +1,15 @@
+name: ci
+
+on:
+  push:
+    branches: [dev, main]
+  pull_request:
+    branches: [dev, main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Ruby syntax
+        run: find Formula -name '*.rb' -print0 | xargs -0 -r -n1 ruby -c
